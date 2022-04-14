@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open steckbrief.html",
-            "file": "n:\\STUDIUM HEHE\\EIA\\SEMESTER 1\\EIA1_SosSe22\\Steckbrief\\steckbrief.html"
+            "name": "debug",
+            "file": "steckbrief.html"
         }
     ]
 }
