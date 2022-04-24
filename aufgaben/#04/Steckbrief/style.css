@@ -3,11 +3,19 @@ h1 {
     font-family: sans-serif; font-size: 27px;
     
 }
-/* Das ist alles für die navbar wtf */
 
+.crop{
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: top 10px;
+}
+
+/* Das ist alles für die navbar wtf */
 .navbar {
   overflow: hidden;
   background-color: #fc411ce5;
+  position: fixed; right: 0px;
 }
 
 .navbar a {
