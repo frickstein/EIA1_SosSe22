@@ -1,7 +1,14 @@
 h1 { 
     color: rgb(39, 39, 39); 
     font-family: sans-serif; font-size: 27px;
+    text-decoration: underline;
+    margin-left: 25px;
     
+}
+
+.jfc{
+  padding-left: 20px;
+  object-position: left 20px;
 }
 
 .crop{
@@ -27,7 +34,7 @@ h1 {
   text-align: center;
   color: rgb(39, 39, 39);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   padding:  12px 15px;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
@@ -63,4 +70,19 @@ h1 {
 content: "";
 clear: both;
 display: table;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  font-family: Helvetica, sans-serif;
+  color: rgb(39, 39, 39);
+}
+
+.fuß{
+  background-image: linear-gradient(to bottom right,yellow, rgb(207, 0, 0));
+}
+
+.feta{
+  margin-left: 20px;
 }
