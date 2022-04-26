@@ -1,0 +1,13 @@
+.link { 
+  margin-left: 2%;
+  text-decoration: double; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-size: 25px; color: rgb(39, 39, 39); 
+  margin-bottom: 14px;
+ }
+
+ .port{
+   margin-left: 2%;
+   margin-top: 2%;
+   padding-bottom: 8px;
+ }
