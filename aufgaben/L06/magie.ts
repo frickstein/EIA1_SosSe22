@@ -28,7 +28,7 @@ function stars () {
     document.getElementById("relative").innerHTML = "100% lol";
 
    // document.getElementById("growth").innerHTML = resEU03.toFixed(2) + "%";
-   document.getElementById("growth").innerHTML = Math.abs((EU2022 - EU2008) / EU2008 * 100 ).toFixed(2);
+   document.getElementById("growth").innerHTML = Math.abs((EU2022 - EU2008) / EU2008 * 100 ).toFixed(2) + "%";
 
     document.getElementById("rate").innerHTML = resEU04 + " Mio.";
     
