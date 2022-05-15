@@ -13,7 +13,7 @@
 <body>
     <nav>
         <div class="row">
-            <div class="wrapper">
+            <div class="wrapper" id=""de>
                 <img src="images/germany.png" height="76px" class="germany">
                 <h5>Deutschland</h5>
             </div>
@@ -55,7 +55,7 @@
                 <img src="images/finland.png" height="76px" class="finland">
                 <h5>Finnland</h5>
             </div>
-            <div class="wrapper active">
+            <div class="wrapper active" id="fr">
                 <img src="images/france.png" height="76px" class="france">
                 <h5>Frankreich</h5>
             </div>
@@ -67,11 +67,11 @@
                 <img src="images/hungary.png" height="76px" class="hungary">
                 <h5>Ungarn</h5>
             </div>
-            <div class="wrapper">
+            <div class="wrapper" id="ir">
                 <img src="images/ireland.png" height="76px" class="ireland">
                 <h5>Irland</h5>
             </div>
-            <div class="wrapper">
+            <div class="wrapper" id="it">
                 <img src="images/italy.png" height="76px" class="italy">
                 <h5>Italien</h5>
             </div>
@@ -128,29 +128,33 @@
         </div>
     </nav>
 
+<div class="EUStarWrapper">
     <img src="images/eu_stars.png" class="stars">
-    <h1>
-        Einwohnerzahl in der europäischen Union
-    </h1>
+
+    <div class="chartWrapper">
+        <div class="chart"></div>
+    </div>
+
+</div>
 
     <main>
         <section>
-            <h2>65,48Mio</h2>
-            <p>Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022</p>
+            <h2 id="total"></h2>
+            <p id="country">Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022</p>
         </section>
 
         <section>
-            <h2>14%</h2>
+            <h2 id="relative"></h2>
             <p>Relativ zur Gesamtzahl in der EU</p>
         </section>
 
         <section>
-            <h2>5,1%</h2>
+            <h2 id="growth"></h2>
             <p>Wachstumsrate seit 2008</p>
         </section>
 
         <section>
-            <h2>3,34Mio</h2>
+            <h2 id="rate"></h2>
             <p>Wachstumsrate gesamt zwischen 2008 and 2022</p>
         </section>
     </main>
