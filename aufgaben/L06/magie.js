@@ -23,6 +23,7 @@ function stars() {
     // document.getElementById("growth").innerHTML = resEU03.toFixed(2) + "%";
     document.getElementById("growth").innerHTML = Math.abs((EU2022 - EU2008) / EU2008 * 100).toFixed(2) + "%";
     document.getElementById("rate").innerHTML = resEU04 + " Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + "100%");
     document.querySelector("#fr").setAttribute("class", "active");
     document.querySelector("#it").setAttribute("class", "wrapper");
     document.querySelector("#de").setAttribute("class", "wrapper");
@@ -43,6 +44,7 @@ function france() {
     document.getElementById("relative").innerHTML = resFR02.toFixed(2) + "%";
     document.getElementById("growth").innerHTML = resFR03.toFixed(2) + "%";
     document.getElementById("rate").innerHTML = resFR04 + " Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + resFR02 + "%");
     document.querySelector("#fr").setAttribute("class", "active");
     document.querySelector("#it").setAttribute("class", "wrapper");
     document.querySelector("#de").setAttribute("class", "wrapper");
@@ -63,6 +65,7 @@ function italy() {
     document.getElementById("relative").innerHTML = resIT02.toFixed(2) + "%";
     document.getElementById("growth").innerHTML = resIT03.toFixed(2) + "%";
     document.getElementById("rate").innerHTML = resIT04 + " Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + resIT02 + "%");
     document.querySelector("#it").setAttribute("class", "active");
     document.querySelector("#fr").setAttribute("class", "wrapper");
     document.querySelector("#de").setAttribute("class", "wrapper");
@@ -83,6 +86,7 @@ function germany() {
     document.getElementById("relative").innerHTML = resDE02.toFixed(2) + "%";
     document.getElementById("growth").innerHTML = resDE03.toFixed(2) + "%";
     document.getElementById("rate").innerHTML = resDE04 + " Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + resDE02 + "%");
     document.querySelector("#de").setAttribute("class", "active");
     document.querySelector("#it").setAttribute("class", "wrapper");
     document.querySelector("#fr").setAttribute("class", "wrapper");
@@ -103,6 +107,7 @@ function ireland() {
     document.getElementById("relative").innerHTML = resIR02.toFixed(2) + "%";
     document.getElementById("growth").innerHTML = resIR03.toFixed(2) + "%";
     document.getElementById("rate").innerHTML = resIR04 + " Mio.";
+    document.querySelector(".chart").setAttribute("style", "height: " + resIR02 + "%");
     document.querySelector("#ir").setAttribute("class", "active");
     document.querySelector("#it").setAttribute("class", "wrapper");
     document.querySelector("#de").setAttribute("class", "wrapper");

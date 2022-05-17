@@ -42,3 +42,20 @@ footer p {
     font-size: 10px;
     opacity: 0.5;
 }
+
+
+.chartWrapper {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 140px;
+    background: #ffffff80;
+    margin-left: 50px;
+}
+.chartWrapper .chart {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: #ffcc00;
+}
