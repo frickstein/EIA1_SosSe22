@@ -1,17 +1,51 @@
 
 body{
-    background-color: rgb(70, 70, 70);
+    background: rgb(26, 22, 22);
 }
 
-.button {
-    background-color: #ce5b25;
+
+.pads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    position: relative;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 6px;
+    padding: 5px;
+  }
+
+
+.btn {
     border: none;
-    color: rgb(34, 34, 34);
-    padding: 15px 32px;
+    height: 150px; width: 150px;
+    padding: 1px 1px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-  }
+    border-radius: 15px;
+
+}
+
+.pad1, .pad2, .pad3{
+    background-color: #2626ff;
+}
+
+.pad4, .pad5, .pad6{
+background-color: #bb20f8;
+}
+
+.pad7, .pad8, .pad9{
+    background-color: #df2736;
+    }
+
+.playBTN{
+    position: fixed;
+    left: 46%;
+}
