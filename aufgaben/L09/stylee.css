@@ -1,0 +1,86 @@
+
+body{
+    background: rgb(70, 68, 68);
+}
+
+
+.pads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    position: relative;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 6px;
+    padding: 5px;
+  }
+
+
+.btn {
+    border: none;
+    height: 150px; width: 150px;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+
+.btn:hover{
+    opacity: 0.7;
+    scale: 1.0;
+}
+
+.btn:active{
+    opacity: 1.0;
+    scale: 1.5;
+}
+
+.pad1, .pad2, .pad3{
+    background-color: #2626ff;
+}
+
+.pad4, .pad5, .pad6{
+background-color: #bb20f8;
+}
+
+.pad7, .pad8, .pad9{
+    background-color: #df2736;
+    }
+
+.playBTN{
+    position: fixed;
+    left: 54%;
+}
+
+.playBTN:hover{
+    opacity: 0.7;
+    scale: 1.0;
+}
+
+.playBTN:active{
+    opacity: 1.0;
+    scale: 1.5;
+}
+
+.playRNG{
+    position: fixed;
+    left: 38%;  
+}
+
+.playRNG:hover{
+    opacity: 0.7;
+    scale: 1.0;
+}
+
+.playRNG:active{
+    opacity: 1.0;
+    scale: 1.5;
+}
