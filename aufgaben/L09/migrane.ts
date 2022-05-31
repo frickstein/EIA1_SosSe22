@@ -37,8 +37,11 @@ namespace L09 {
     
     
     function remixer(): void {
-        num = setInterval(StartMixer, 600);
-    
+
+        if (num != 0) {
+            clearInterval(num);
+        }
+        
         function StartMixer(): void {
             for (var i: number = 0; i <= chain.length; i++) {
                 rng = Math.floor(Math.random() * 3);
@@ -46,38 +49,42 @@ namespace L09 {
                 playing = true;
             }
         }
+        num = setInterval(StartMixer, 600);
+    
     }
     
-    function playMixer(): void { 
-            setInterval(function(): void {   
+    function playMixer(): number { 
+        return setInterval(function(): void {   
                                 
                     playSample(chain[counter]);
                     counter++;
                     if (counter == 3) {
                         counter = 0;         
                     }   
-            },          600);
+            },             600);
     }  
     
     function playButton(): void { 
-            document.querySelector("#toggler").setAttribute("class", "fas fa-stop fa-8x");
-            document.querySelector("#toggler").classList.remove("fa-play");
-            playMixer();
-            playing = true;
-            console.log("sound playing");
+        if (document.querySelector("#toggler").getAttribute("class") == "fas fa-stop fa-8x") {
+            document.querySelector("#toggler").setAttribute("class", "fas fa-play fa-8x");
+            clearInterval(z);
+            playing = false;
+            resetMixer();
+            console.log("sound stopped");
+            return;
+        }
+        document.querySelector("#toggler").setAttribute("class", "fas fa-stop fa-8x");
+        document.querySelector("#toggler").classList.remove("fa-play");
+        z = playMixer();
+        playing = true;
+        console.log("sound playing");
     
-            if (document.querySelector("#toggler").getAttribute("class") == " fas fa-stop fa-8x") {
-                document.querySelector("#toggler").setAttribute("class", "fas fa-play fa-8x");
-                clearInterval(num);
-                playing = false;
-                resetMixer();
-                console.log("sound stopped");
-            }
+
     }
     
     function resetMixer(): void {
-        chain.length = 0;
-        chain.length = 3;
+       // chain.length = 0;
+       // chain.length = 3;
         playing = false;
     }
 

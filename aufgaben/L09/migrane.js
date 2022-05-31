@@ -30,7 +30,9 @@ var L09;
         sound.play();
     }
     function remixer() {
-        num = setInterval(StartMixer, 600);
+        if (num != 0) {
+            clearInterval(num);
+        }
         function StartMixer() {
             for (var i = 0; i <= chain.length; i++) {
                 rng = Math.floor(Math.random() * 3);
@@ -38,9 +40,10 @@ var L09;
                 playing = true;
             }
         }
+        num = setInterval(StartMixer, 600);
     }
     function playMixer() {
-        setInterval(function () {
+        return setInterval(function () {
             playSample(chain[counter]);
             counter++;
             if (counter == 3) {
@@ -49,22 +52,23 @@ var L09;
         }, 600);
     }
     function playButton() {
-        document.querySelector("#toggler").setAttribute("class", "fas fa-stop fa-8x");
-        document.querySelector("#toggler").classList.remove("fa-play");
-        playMixer();
-        playing = true;
-        console.log("sound playing");
-        if (document.querySelector("#toggler").getAttribute("class") == " fas fa-stop fa-8x") {
+        if (document.querySelector("#toggler").getAttribute("class") == "fas fa-stop fa-8x") {
             document.querySelector("#toggler").setAttribute("class", "fas fa-play fa-8x");
-            clearInterval(num);
+            clearInterval(z);
             playing = false;
             resetMixer();
             console.log("sound stopped");
+            return;
         }
+        document.querySelector("#toggler").setAttribute("class", "fas fa-stop fa-8x");
+        document.querySelector("#toggler").classList.remove("fa-play");
+        z = playMixer();
+        playing = true;
+        console.log("sound playing");
     }
     function resetMixer() {
-        chain.length = 0;
-        chain.length = 3;
+        // chain.length = 0;
+        // chain.length = 3;
         playing = false;
     }
 })(L09 || (L09 = {}));
