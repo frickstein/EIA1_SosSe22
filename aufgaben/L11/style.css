@@ -1,9 +1,90 @@
 body{
+    height: 667px;
+    width: 375px;
     background-color: rgba(218, 162, 60, 0.877);
 }
+
 
 
 footer{
     color: rgb(34, 34, 34);
     font-family: 'Oswald';
+    position: absolute;
+    bottom: 5px;
 }
+
+.title{
+    font-family: 'Bebas Neue';
+}
+
+.difficulty{
+    font-family: 'Oswald';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.diff{
+    padding-right: 3px;
+}
+
+.point-counter{
+    font-family: 'Oswald';
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.head{
+    font-size: 23px;
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+.input-box{
+    background-color: #d87330;
+    font-family: 'Oswald';
+    border-radius: 15px;
+
+    width: 300px;
+    height: 60px;
+    position: fixed;
+    left: 40px;
+    padding-bottom: 10px;
+    
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #d87330;
+    font-family: 'Oswald';
+    border-radius: 15px;
+    gap: 2px;
+
+    padding: 6px;
+    height: 120px;
+    width: 300px;
+    position: relative;
+    left: 27px;
+    top: 100px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.911);
+    border: 1px solid rgba(35, 35, 35, 0.836);
+    font-size: 16px;
+    text-align: center;
+    opacity: 30%;
+    border-radius: 10px;
+  }
+  
+  .grid-item:hover{
+      opacity: 100%;
+      transition: .5s;
+  }
+  
+  .grid-item:not(:hover){
+      opacity: 50%;
+      transition: .5s;
+  }
