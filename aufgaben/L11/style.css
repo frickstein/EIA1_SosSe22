@@ -1,6 +1,5 @@
 body{
-    height: 667px;
-    width: 375px;
+
     background-color: rgba(218, 162, 60, 0.877);
 }
 
@@ -15,6 +14,11 @@ footer{
 
 .title{
     font-family: 'Bebas Neue';
+}
+
+.current{
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .difficulty{
@@ -43,6 +47,7 @@ footer{
 
 .input-box{
     background-color: #d87330;
+    color: rgb(34, 34, 34);
     font-family: 'Oswald';
     border-radius: 15px;
 
@@ -75,6 +80,7 @@ footer{
     border: 1px solid rgba(35, 35, 35, 0.836);
     font-size: 16px;
     text-align: center;
+    justify-content: center;
     opacity: 30%;
     border-radius: 10px;
   }
