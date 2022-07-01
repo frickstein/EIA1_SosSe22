@@ -166,7 +166,7 @@ function Injector() {
 
  selected = RandomSentence(); 
 
- document.querySelector (".point-counter").innerHTML = countTracker.toString() + " Pts." ;      // showing of the total points in html
+ document.querySelector (".point-counter").innerHTML = countTracker.toString() + " Pts." ;      // showing off the total points in html
  document.querySelector(".head").innerHTML = " \" " + selected.german + " \" ";                 // showing off the germans sentence
 
  var gridContainer = document.querySelector(".grid-container");                                 // variables for convienience
