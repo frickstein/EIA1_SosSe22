@@ -162,6 +162,7 @@ function RandomSpanish(spanish: string[]) {
 
 } 
 
+// main function to insert typescript values into html
 function Injector() {
 
  selected = RandomSentence(); 
@@ -203,11 +204,13 @@ function OrderChecker(word: string) {                                           
    selectWord.push(word);                                                                            // this part is there to remember the order of the selection
    countTracker++;
  }
+
  else {
   alert("Das war leider falsch. Versuchs erneut! ");
   countTracker--;
 
  }
+
  if (countTracker < 0) {
     countTracker = 0;
  }
@@ -225,8 +228,8 @@ function OrderChecker(word: string) {                                           
          Injector();
      } 
     }
-     
-     else if (sentenceTracker == 10 && diffTracker == 1) {
+
+    else if (sentenceTracker == 10 && diffTracker == 1) {
      if (confirm("Glückwunsch! Die Punktzahl: " + countTracker + ". Du hast den zweiten Kurs geschafft! Möchtest du fortfahren?")) {
          hardDiff.setAttribute("class", "diff hard current");
          midDiff.setAttribute("class", "diff mid");

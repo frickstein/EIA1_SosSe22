@@ -119,6 +119,7 @@ function RandomSpanish(spanish) {
     }
     return newSpanish;
 }
+// main function to insert typescript values into html
 function Injector() {
     selected = RandomSentence();
     document.querySelector(".point-counter").innerHTML = countTracker.toString() + " Pts."; // showing off the total points in html
