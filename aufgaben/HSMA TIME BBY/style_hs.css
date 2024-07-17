@@ -1,0 +1,46 @@
+body {
+    font-family:'Oswald', sans-serif,'Signika Negative';
+    font-size: small;
+    height: 10px;
+    color: rgb(55, 53, 53);
+    background-color: rgb(195, 132, 69);
+  }
+
+
+  /* Beispiel Text */
+  .singika {
+    font-family: 'Signika Negative';
+    font-size: 25pt;
+    color:rgb(70, 57, 57);
+  }
+
+  @keyframes fade {
+	0%      { opacity: 0; }  
+	11.11%  { opacity: 1; }  
+	33.33%  { opacity: 1; }  
+	44.44%  { opacity: 0; }  
+}
+
+css-slides img { 
+  object-fit: cover;
+  height: 370px;
+  width: 2000px;
+  
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position: absolute;
+    left: 0%;; 
+    right:0; 
+    top: 1px;
+    
+}
+
+css-slides img:nth-child(1) { animation-delay: 0s; }
+css-slides img:nth-child(2) { animation-delay: 3s; }
+css-slides img:nth-child(3) { animation-delay: 6s; } 
+
+css-slides img:hover{
+    animation-play-state: paused;
+  }
